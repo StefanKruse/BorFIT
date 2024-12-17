@@ -14,6 +14,7 @@ require(tidyr)
 require(purrr)
 
 #########functions
+#######the following function is according to Liam Irwin (https://liamirwin.github.io/CompTreeR/)
 get_crown_attributes <- function(X, Y, Z, export_ashape = FALSE) {
   if (length(X) <= 3 || length(Y) <= 3 || length(Z) <= 3) {
     print('Cannot compute a 3D hull from 3 or fewer points')
